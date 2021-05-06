@@ -14,8 +14,8 @@ function App() {
     pic: "",
     audio: "",
   });
-  const [imageLoading, setImageLoading] = useState(false);
-  const [imageurl, setUrl] = useState(false);
+  // const [imageLoading, setImageLoading] = useState(false);
+  // const [imageurl, setUrl] = useState(false);
   const [songsList, setSongsList] = useState([]);
 
   const handleChange = (e) => {
