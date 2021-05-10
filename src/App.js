@@ -14,8 +14,6 @@ function App() {
     pic: "",
     audio: "",
   });
-  // const [imageLoading, setImageLoading] = useState(false);
-  // const [imageurl, setUrl] = useState(false);
   const [songsList, setSongsList] = useState([]);
 
   const handleChange = (e) => {
@@ -47,17 +45,6 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // const payload = {
-    //   name: formData.songName,
-    //     audioTime: formData.songDuration,
-    //     artistName: formData.name,
-    //     category: formData.songType,
-    //     releasedDate: formData.songDate,
-    //     audioWords: formData.songLyrics,
-    //     image: formData.pic,
-    //     audio: formData.audio
-    // }
     const form = new FormData();
     form.append("name", formData.songName);
     form.append("audioTime", formData.songDuration);
