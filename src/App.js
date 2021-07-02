@@ -31,7 +31,6 @@ function App() {
       ...prevFormData,
       pic: fileUploaded,
     }));
-    console.log("test formData fileUploaded", fileUploaded, formData);
   };
   const handleUploadAudio = async (event) => {
     const fileUploaded = event.target.files[0];
@@ -40,7 +39,6 @@ function App() {
       ...prevFormData,
       audio: fileUploaded,
     }));
-    console.log("test formData fileUploaded", fileUploaded);
   };
 
   const handleSubmit = (e) => {
